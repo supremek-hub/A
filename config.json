@@ -1,0 +1,8 @@
+{
+    "port_range": [21, 1024],  
+    "timeout": 0.1,
+    "thread_limit": 300,
+    "output_format": ["pdf", "html"],
+    "auto_scan_interval_seconds": 300,
+    "enable_auto_scan": true
+}

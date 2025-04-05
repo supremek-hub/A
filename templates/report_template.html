@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Scan Report</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Network Scan Report</h1>
+    <p>Generated: {{ timestamp }}</p>
+
+    {% for device in devices %}
+    <div style="border:1px solid #ccc; padding:10px; margin:10px;">
+        <h3>{{ device.IP }} ({{ device.Hostname }})</h3>
+        <p><b>MAC:</b> {{ device.MAC }} | <b>Vendor:</b> {{ device.Vendor }} | <b>OS:</b> {{ device.OS }}</p>
+        {% if device.Ports %}
+        <div id="chart-{{ loop.index0 }}" style="height:250px;"></div>
+        <script>
+        Plotly.newPlot("chart-{{ loop.index0 }}", [{
+            x: {{ device.Ports.keys()|list }},
+            y: {{ device.Ports.values()|list|length*[1] }},
+            type: 'bar',
+            text: {{ device.Ports.values()|list }},
+            hoverinfo: 'x+text'
+        }], { title: 'Open Ports' });
+        </script>
+        {% else %}
+        <p>No open ports.</p>
+        {% endif %}
+    </div>
+    {% endfor %}
+</body>
+</html>
