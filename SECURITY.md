@@ -1,21 +1,42 @@
-# Security Policy
+🔐 Security Policy
+Project: Automated Cybersecurity Scanner (v0.0.1)
+Maintainer Contact: kalyansupreme13@gmail.com
 
-## Supported Versions
+📌 Supported Versions
+The following table defines which versions of the Automated Cybersecurity Scanner are currently supported with security updates and critical patches:
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Version	Security Support Status
+0.0.1	✅ Actively supported for critical security fixes only.
+< 0.0.1	❌ Unsupported – No security patches will be issued.
+Advisory: Users running unsupported versions are strongly encouraged to upgrade to v0.0.1 or later to remain protected against known and emerging vulnerabilities.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+🚨 Reporting a Vulnerability
+We prioritize security as a first-class concern. If you discover a vulnerability or security issue in this tool, responsible disclosure is appreciated.
 
-## Reporting a Vulnerability
+📨 Contact:
+Email: kalyansupreme13@gmail.com
 
-Use this section to tell people how to report a vulnerability.
+Subject Line Format: Vulnerability Report – [Short Description]
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+📄 Include the Following:
+Affected version(s)
+
+Description of the vulnerability
+
+Steps to reproduce (Proof-of-Concept if possible)
+
+Potential impact
+
+⏱ What to Expect:
+Acknowledgment within 48 hours of report submission.
+
+Triage and classification of the issue within 5 business days.
+
+Ongoing updates on the remediation process.
+
+If accepted, the fix will be issued in the next secure release cycle.
+
+If declined, a detailed explanation will be shared.
+
+Disclosure Protocol: We follow a coordinated disclosure policy. Please do not disclose vulnerabilities publicly until a fix is released and mutually agreed upon.
+
